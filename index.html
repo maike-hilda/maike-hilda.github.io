@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sushi Prompt - Unsolved</title>
+  </head>
+  <body>
 
-<head>
+    <script type="text/javascript">
+    //Using a confirm, ask the user, "Do you like _?" Store their response in a variable. Using a prompt, ask the user, "What kind of _ do you like?" Store their response in a variable. Alert both variables to the screen.
 
-<title>Hello World</title>
-<meta charset="UTF-8">
-<!--using meyerweb.com/eric/tools/css/reset to have default for all browsers -->
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-<!-- Style sheet for this website -->
-<!--<link rel="stylesheet" type="text/css" href="assets/css/style.css" />-->
+    // Write code here!
+    	var what = confirm("Do you like Sushi?");
+    	
 
-</head>
 
-<body>
+    	var alert_message;
 
-<header>
-	<h1 id="name">Hello World</h1>
-</header>
-		
-<nav>
-	<a href="index.html">Home</a><a href="#">Portfolio</a><a href="#">Contact</a>
-</nav>
-	
-	
+    	if(what == true) {
+    		var kind = prompt("What kind of Sushi do you like?");
+    		alert_message = "I see, so you do like sushi!";
+    		alert(alert_message);
+    		alert("But that fact that you like " + kind + " shows me that you have terrible taste!");
+    	}
+    	else {
+    		alert_message = "Come on, how can you not like suhsi???";
+    		alert(alert_message);
+    		alert("Seriously, how can you not?");
+    		alert("Not even a little bit?");
+    		var try_again = confirm("Change your mind, pleeeeease!")
+    		if(try_again==true) {
+    			alert("I saved your soul!");
+    		}
+    		else {
+    			alert("There is no hope for you :-(");
+    		}
+    	}	
 
-<footer>
-	&copy Copyright 2017 Maike Scherer
-</footer>
-</body>
 
+    	
+    	
+
+
+    </script>
+
+  </body>
 </html>
